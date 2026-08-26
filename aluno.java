@@ -1,4 +1,4 @@
-public class Aluno {
+public class aluno {
     private String nome; 
     public void inserirNome(String nn) {
         nome = nn;
@@ -7,7 +7,7 @@ public class Aluno {
         return nome;
     }
     public static void main(String args[]){
-        Aluno a = new Aluno(); 
+        aluno a = new aluno(); 
         a.inserirNome ("Pessoa");
         System.out.println("saida: "+a.recuperarNome());
     }
