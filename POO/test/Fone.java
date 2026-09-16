@@ -7,7 +7,7 @@ public class Fone{
     private int bateria;
     private boolean fechado;
 
-    public Fone (String m, String t){
+    public Fone (String m, String t){//metodo construtor 
         this.modelo = m;
         this.tipo = t;
         this.fechar();
