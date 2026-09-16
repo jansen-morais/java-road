@@ -2,7 +2,7 @@ package Aula05;
 
 public class ContaBanco {
     
-    public int nunmConta;
+    public int numConta;
     protected String tipo;
     private String dono;
     private float saldo;
@@ -13,6 +13,14 @@ public class ContaBanco {
         this.fecharConta(); 
     }
 
+    public void setNumConta(int n){
+        numConta = n;
+    }
+    public int getNumConta (){
+        return this.numConta;
+    }
+
+    
 // Metodos de ação     
     public void abrirConta(){
 
