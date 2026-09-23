@@ -54,7 +54,7 @@ public class ContaBanco {
     public void abrirConta(String t){
         setTipo(t);
         setStatus(true);
-        if (t == "CC") {
+        if (t == "CC") {//o ideal em Java para comparar texto (String) é usar t.equals("CC") em vez de t == "CC"
             saldo = 50;
         } else if (t == "CP") {
             saldo = 150;
