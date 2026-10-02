@@ -74,13 +74,36 @@ public class ContaBanco {
 
     }
     public void depositar (){
+        if (status = true){
+            //saldo = saldo + v;
+            setStatus (getSaldo() + v);
+        } else {
+            System.out.println(" A conta está fechada.");
+        }
 
     }
     public void sacar (){
+        if (status = true){
+            if (saldo > v){
+                saldo = saldo - v;
+
+            }else{
+                System.out.println(" Saldo insuficiente.");
+            }
+        }else{
+            System.out.println(" Não existe conta aberta.");
+        }
 
     }
 public void pagarMensal(){
-
+     int v; // Variavel criada dentro de metodo não leva classificação como "pirvate" ou "public"
+    if (tipo = "CC"){ // Aqui eu tambem posso utiliza (getTipo = cc)
+        v = 12;
+    }else if (tipo = "CP"){
+        v = 20;
+    }else{
+        system.out.println(" Impossivel pagar.");
+    }
 
 }
 
